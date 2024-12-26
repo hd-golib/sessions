@@ -4,7 +4,7 @@ import (
 	"database/sql"
 
 	"github.com/antonlindstrom/pgstore"
-	"github.com/gin-contrib/sessions"
+	"github.com/hd-golib/sessions"
 )
 
 type Store interface {

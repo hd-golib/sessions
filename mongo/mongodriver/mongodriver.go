@@ -2,7 +2,7 @@ package mongodriver
 
 import (
 	"github.com/bos-hieu/mongostore"
-	"github.com/gin-contrib/sessions"
+	"github.com/hd-golib/sessions"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 

@@ -1,4 +1,4 @@
-module github.com/gin-contrib/sessions
+module github.com/hd-golib/sessions
 
 go 1.19
 

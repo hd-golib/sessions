@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/bradfitz/gomemcache/memcache"
-	"github.com/gin-contrib/sessions"
-	"github.com/gin-contrib/sessions/memcached"
 	"github.com/gin-gonic/gin"
+	"github.com/hd-golib/sessions"
+	"github.com/hd-golib/sessions/memcached"
 )
 
 func main() {

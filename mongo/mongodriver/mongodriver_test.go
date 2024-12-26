@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gin-contrib/sessions"
-	"github.com/gin-contrib/sessions/tester"
+	"github.com/hd-golib/sessions"
+	"github.com/hd-golib/sessions/tester"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )

@@ -2,8 +2,8 @@ package redis
 
 import (
 	"errors"
+	"github.com/hd-golib/redistore"
 
-	"github.com/boj/redistore"
 	"github.com/gomodule/redigo/redis"
 	"github.com/hd-golib/sessions"
 )
@@ -25,8 +25,8 @@ type Store interface {
 //
 // It is recommended to use an authentication key with 32 or 64 bytes. The encryption key,
 // if set, must be either 16, 24, or 32 bytes to select AES-128, AES-192, or AES-256 modes.
-func NewStore(size int, network, address, password string, keyPairs ...[]byte) (Store, error) {
-	s, err := redistore.NewRediStore(size, network, address, password, keyPairs...)
+func NewStore(size int, network, address, username, password string, keyPairs ...[]byte) (Store, error) {
+	s, err := redistore.NewRediStore(size, network, address, username, password, keyPairs...)
 	if err != nil {
 		return nil, err
 	}
@@ -37,8 +37,8 @@ func NewStore(size int, network, address, password string, keyPairs ...[]byte) (
 // redis DB instead of using the default one ("0")
 //
 // Ref: https://godoc.org/github.com/boj/redistore#NewRediStoreWithDB
-func NewStoreWithDB(size int, network, address, password, DB string, keyPairs ...[]byte) (Store, error) {
-	s, err := redistore.NewRediStoreWithDB(size, network, address, password, DB, keyPairs...)
+func NewStoreWithDB(size int, network, address, username, password, DB string, keyPairs ...[]byte) (Store, error) {
+	s, err := redistore.NewRediStoreWithDB(size, network, address, username, password, DB, keyPairs...)
 	if err != nil {
 		return nil, err
 	}

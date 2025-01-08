@@ -1,6 +1,6 @@
 module github.com/hd-golib/sessions
 
-go 1.23.4
+go 1.22
 
 require (
 	github.com/antonlindstrom/pgstore v0.0.0-20220421113606-e3a6e3fed12a
@@ -10,8 +10,8 @@ require (
 	github.com/globalsign/mgo v0.0.0-20181015135952-eeefdecb41b8
 	github.com/gomodule/redigo v1.9.2
 	github.com/gorilla/context v1.1.2
-	github.com/gorilla/sessions v1.4.0
-	github.com/hd-golib/redistore v0.0.0-20241227030202-e469819fe2f4
+	github.com/gorilla/sessions v1.3.0
+	github.com/hd-golib/redistore v0.0.0-20250108005958-2a347a81f39c
 	github.com/kidstuff/mongostore v0.0.0-20181113001930-e650cd85ee4b
 	github.com/laziness-coders/mongostore v0.0.14
 	github.com/memcachier/mc v2.0.1+incompatible
